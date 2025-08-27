@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "skt sans";
+  src: url("/fonts/SKTSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@theme inline {
+  /* Break Point */
+  --breakpoint-lg: 1078px;
+
+  /* Color */
+  --color-custom-black: #242424;
+}
+
+@utility text-13-bold {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@utility text-13-normal {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+@utility text-20-bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@utility project-img {
+  background: url("/projectImg.jpg") center no-repeat;
+}
+
+@utility skill-img {
+  background: url("/skillimg.jpg") center no-repeat;
+}
+
+body {
+  font-family: "skt sans", sans-serif;
+}
