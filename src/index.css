@@ -14,23 +14,31 @@
   --color-custom-black: #242424;
 }
 
+/* Text Size */
+@utility text-12-normal {
+  font-size: 12px;
+  font-weight: normal;
+}
 @utility text-13-bold {
   font-size: 13px;
   font-weight: 700;
 }
-
 @utility text-13-normal {
   font-size: 13px;
   font-weight: normal;
 }
-
+@utility text-16-bold {
+  font-size: 16px;
+  font-weight: 700;
+}
 @utility text-20-bold {
   font-size: 20px;
   font-weight: 700;
 }
 
+/* Background Img */
 @utility project-img {
-  background: url("/projectImg.jpg") center no-repeat;
+  background: url("/projectImg.jpg") center/cover no-repeat;
 }
 
 @utility skill-img {
