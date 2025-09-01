@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import HomeContent from "../components/home/HomeContent";
-import HomeDetail from "../components/home/HomeDetail";
+import Mystory from "../components/home/Mystory";
+import MyProject from "../components/home/MyProject";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -19,7 +20,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="lg:sticky top-0 left-0 z-0 min-h-screen">
+      <section className="lg:sticky top-0 left-0 z-0 min-h-screen">
         <div className="min-h-screen relative overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-100 ease-out"
@@ -32,8 +33,11 @@ export default function Home() {
           />
           <HomeContent />
         </div>
-      </div>
-      <HomeDetail />
+      </section>
+      <section className="min-h-screen bg-white relative z-10">
+        <Mystory />
+        <MyProject />
+      </section>
     </div>
   );
 }
