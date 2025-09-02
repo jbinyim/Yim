@@ -9,16 +9,16 @@ import ProjectSlide from "./ProjectSlide";
 
 export default function MyProject() {
   return (
-    <main className="w-[1078px] my-35 mx-auto">
-      <article className="flex items-center gap-2 px-4 lg:px-0">
+    <main className="my-35 overflow-hidden">
+      <article className="w-[1078px] mx-auto flex items-center gap-2 px-4 lg:px-0">
         <img src="/myproject.svg" alt="별 아이콘" className="h-6.5" />
         <span className="text-22-bold lg:text-36-bold">
           가능성을 여는 이야기
         </span>
       </article>
-      <article className="hidden lg:block mt-15">
+      <article className="w-[1408px] mx-auto  lg:block mt-15">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={4}
           spaceBetween={10}
           loop={true}
           autoplay={{
@@ -30,7 +30,10 @@ export default function MyProject() {
           className="mySwiper"
         >
           {projects.map((project, idx) => (
-            <SwiperSlide key={idx} className="rounded-2xl overflow-hidden">
+            <SwiperSlide
+              key={idx}
+              className="rounded-2xl overflow-hidden w-[353px] h-[550px]"
+            >
               <ProjectSlide project={project} />
             </SwiperSlide>
           ))}

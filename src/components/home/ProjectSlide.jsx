@@ -11,7 +11,7 @@ export default function ProjectSlide({ project }) {
           className="absolute inset-0 backface-hidden"
         >
           <div
-            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            className="w-[353px] h-[550px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: `url("${project.img[0]}")`,
             }}
@@ -19,9 +19,25 @@ export default function ProjectSlide({ project }) {
         </Link>
 
         {/* 뒷면 */}
-        <div className="absolute inset-0 flex items-center justify-center bg-amber-200 text-white p-6 text-center rotate-y-180 backface-hidden">
-          <p className="text-lg">{project.description}</p>
-        </div>
+        <figure
+          className="absolute inset-0 rotate-y-180 backface-hidden rounded-2xl"
+          style={{
+            backgroundColor: project.color.bg,
+            color: project.color.text,
+          }}
+        >
+          <Link
+            to={`${project.url}`}
+            target="_blank"
+            className="inline-block w-full h-full"
+          >
+            <div className="mt-15 px-10">
+              <p className="text-16-regular mb-2">{project.group}</p>
+              <p className="text-30-bold mb-10">{project.title}</p>
+              <p className="text-16-normal">{project.oneLine}</p>
+            </div>
+          </Link>
+        </figure>
       </div>
     </div>
   );

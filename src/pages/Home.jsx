@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="lg:sticky top-0 left-0 z-0 min-h-screen">
+      <section className="-mt-18.5 lg:sticky top-0 left-0 z-0 min-h-screen">
         <div className="min-h-screen relative overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-100 ease-out"

@@ -54,7 +54,7 @@ export default function GithubBox() {
   };
 
   return (
-    <Link to="/github" className="order-4">
+    <Link to="https://github.com/jbinyim" target="_blank" className="order-4">
       <div
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
