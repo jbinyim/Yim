@@ -25,8 +25,8 @@ export default function Project() {
     });
   }, []);
   return (
-    <main className="bg-[#242424] w-full min-h-screen">
-      <section className="w-[1078px] mx-auto py-10 flex justify-between">
+    <main className="-mt-18.5 bg-[#242424] w-full min-h-screen h-full">
+      <section className="w-[1078px] mx-auto py-30 flex justify-between">
         <div className="img1">
           <div>
             <img

@@ -1,25 +1,10 @@
-import { Link } from "react-router-dom";
 import { comments } from "../../utils/comment";
-import SeeMoreButton from "../common/SeeMoreButton";
-import HashTag from "../common/HashTag";
 
-export default function Mystory() {
+export default function Review() {
   return (
-    <main className="pt-35 px-4 lg:px-0 lg:w-[1078px] mx-auto">
-      <article className="flex items-center gap-2">
-        <img src="/news-motion.gif" alt="간단 소개 아이콘" className="w-6.5" />
-        <p className="text-22-bold lg:text-36-bold">나의 이야기</p>
-      </article>
-      <article className="mt-14 flex flex-col items-center gap-2">
-        <img
-          src="https://jbinyim12.cafe24.com/web/upload/captcha/image_72-removebg-preview.png"
-          alt="임정빈 사진2"
-          className="h-105 object-contain"
-        />
-        <HashTag />
-      </article>
-      <article className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-3">
-        {comments.slice(0, 4).map((comment, _idx) => (
+    <div>
+      <article className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        {comments.map((comment, _idx) => (
           <figure key={_idx} className="bg-[#d4d4d4] rounded-2xl p-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -33,11 +18,10 @@ export default function Mystory() {
                 fill="#323232"
               ></path>
             </svg>
-            <p className="mt-3">{comment}</p>
+            <p className="mt-3 leading-7">{comment}</p>
           </figure>
         ))}
       </article>
-      <SeeMoreButton text="나의 소개 바로가기" link={"introduce"} />
-    </main>
+    </div>
   );
 }

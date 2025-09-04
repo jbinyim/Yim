@@ -33,7 +33,7 @@ export default function EducationBox() {
         className="hidden h-100 bg-[#e0e0e0] rounded-2xl lg:flex flex-col gap-10 cursor-pointer"
       >
         <div className="p-6 cursor-pointer">
-          <p className="text-20-bold mb-3">교육</p>
+          <p className="text-20-bold mb-3">활동</p>
           <p className="text-13-normal">
             최신 웹 기술을 활용한
             <br />
