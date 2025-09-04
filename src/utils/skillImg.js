@@ -26,7 +26,7 @@ export const skillImg = {
     },
     {
       name: "TailWind CSS",
-      img: "https://cdn.creazilla.com/icons/3254431/tailwindcss-icon-icon-lg.png",
+      img: "https://jbinyim12.cafe24.com/img/tailwindcss.png",
     },
     {
       name: "Scss",
