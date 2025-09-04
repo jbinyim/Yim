@@ -16,7 +16,7 @@ export default function Introduce() {
     <section className="lg:w-[1078px] mx-auto py-16 px-4 lg:px-0">
       <TitleBox title="소개" />
       <article className="mb-20">
-        <p className="my-13 text-24-normal leading-10">
+        <p className="my-13 text-16-normal lg:text-24-normal leading-6 lg:leading-10">
           작은 배움도 놓치지 않고 성장으로 이어가며
           <br />
           <span className="text-[#3a46cd]">
@@ -28,7 +28,7 @@ export default function Introduce() {
           <img
             src="https://jbinyim12.cafe24.com/web/upload/captcha/me-removebg-preview.png"
             alt="임정빈 사진"
-            className="w-109.5 h-127.5"
+            className="lg:w-109.5 lg:h-127.5"
           />
           <HashTag />
         </div>

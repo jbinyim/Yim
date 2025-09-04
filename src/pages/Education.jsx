@@ -38,7 +38,7 @@ export default function Education() {
   };
 
   return (
-    <section className="w-[1078px] mx-auto py-16">
+    <section className="w-full lg:w-[1078px] mx-auto py-16 px-4 lg:px-0">
       <TitleBox title="활동" />
       <main className="py-10 flex flex-col gap-15">
         <Table title="교육 이수" type={edu} />

@@ -15,6 +15,10 @@
 }
 
 /* Text Size */
+@utility text-10-normal {
+  font-size: 10px;
+  font-weight: normal;
+}
 @utility text-12-normal {
   font-size: 12px;
   font-weight: normal;

@@ -5,6 +5,7 @@ export const projects = [
     url: "https://moving-web.site/ko/mover-search",
     color: { bg: "#f1f9ff", text: "#242424" },
     group: "팀",
+    date: "2025.07.01 ~ 2025.08.18",
     oneLine:
       "여러 기사님의 견적을 비교하고, 자신에게 가장 적합한 전문가를 선택할 수 있도록 돕는 스마트 이사 비교 플랫폼입니다.",
     skill: {
