@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @font-face {
   font-family: "skt sans";
@@ -103,6 +104,50 @@
   background-color: #f0f0f0;
   color: #333;
   border-radius: 0.375rem;
+}
+
+/* markdown css */
+
+.prose {
+  @apply max-w-none prose-slate;
+}
+
+.prose p {
+  @apply mb-4 leading-relaxed; /* 단락 간격과 줄 높이 조정 */
+}
+
+.prose h2 {
+  background: rgb(255, 255, 0, 0.4);
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  @apply mt-8 mb-4; /* 헤더 위아래 여백 */
+}
+
+.prose table {
+  @apply border border-gray-200 rounded-lg shadow-sm mb-6; /* 표 스타일 */
+}
+
+.prose th,
+.prose td {
+  @apply px-4 py-2 border border-gray-200; /* 셀 패딩과 보더 */
+}
+
+.prose ul,
+.prose ol {
+  @apply pl-6 mb-4 space-y-2; /* 리스트 여백과 간격 */
+}
+
+/* project img  */
+.project-card {
+  background-position: center top;
+  transition: background-position 0.5s ease;
+}
+
+.project-card:hover {
+  background-position: center bottom !important;
 }
 
 /* Background Img */

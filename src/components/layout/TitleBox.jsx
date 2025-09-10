@@ -1,3 +1,3 @@
 export default function TitleBox({ title }) {
-  return <p className="text-30-bold lg:text-56-bold">{title}</p>;
+  return <p className="text-25-bold lg:text-36-bold">{title}</p>;
 }
